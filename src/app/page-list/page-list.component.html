@@ -1,0 +1,20 @@
+<div class="ui container">
+  <table class="ui selectable inverted table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Word Count</th>
+        <th>Snippet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let page of PagesAria">
+        
+        <td >{{page.title}}</td>
+        <td >{{page.wordcount}}</td>
+        <td [innerHTML]="page.snippet"></td>
+      
+      </tr>
+    </tbody>
+  </table>
+</div>

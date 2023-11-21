@@ -1,0 +1,5 @@
+<form class="ui form" (submit)="onFormSubmit($event)">
+    <div class="ui input" style="width: 70rem; margin:3rem 130px;">
+        <input #input (input)="term=input.value" placeholder="Search...">
+    </div>
+</form>   
